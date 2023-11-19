@@ -1,34 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useState } from "react";
+import Alerts from "./components/Alerts";
+import Button from "./components/Button";
+import ListGroup from "./components/ListGroup";
+import Navbar from "./components/Navbar";
+import Cart from "./components/Cart";
+import ExpandableText from "./components/ExpandableText";
+import Form from "./components/Form";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    <>
+      <ExpandableText maxChars={10}>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quis illo
+        illum voluptatibus, tempore, dolores culpa neque maxime temporibus
+        possimus nisi ratione eveniet ipsa, laboriosam eligendi consequuntur
+        esse. Consequuntur dolore nam, totam officia alias aut aperiam animi.
+        Exercitationem voluptatibus, odit nesciunt laboriosam, soluta at labore
+        aliquam accusamus modi eius sequi laborum corporis ab alias? Voluptate
+        tenetur ad ipsa delectus sint, nulla, aspernatur voluptatem, atque
+        commodi quos iusto sit laudantium fugiat laborum ab? Repellendus beatae
+        officiis quisquam fugiat cupiditate, alias sunt assumenda voluptas enim.
+        Minus quisquam iure maiores, necessitatibus vero voluptatibus
+        praesentium dolores odit cumque minima harum similique! Perspiciatis,
+        magni saepe.
+      </ExpandableText>
+
+      <Form></Form>
+    </>
+  );
 }
 
-export default App
+export default App;
